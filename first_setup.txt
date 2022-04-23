@@ -11,6 +11,8 @@ sudo apt install caffeine
 sudo apt install nethogs
 suod apt install htop
 sudo apt install bpytop
+// Like macos outlook
+sudo apt install gnome-sushi
 
 ----------------------------------------------------------------------
 
