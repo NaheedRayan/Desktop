@@ -1,0 +1,99 @@
+/////////////////////////////////////////////////////
+////////// Steps after installing Ubuntu ////////////
+/////////////////////////////////////////////////////
+
+//UTILITIES
+
+sudo apt update
+sudo apt install stacer
+sudo apt install neofetch
+sudo apt install caffeine
+sudo apt install nethogs
+suod apt install htop
+sudo apt install bpytop
+
+----------------------------------------------------------------------
+
+//BRAVE BROWSER
+
+sudo apt install apt-transport-https curl
+
+sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
+
+echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list
+
+sudo apt update
+sudo apt install brave-browser
+
+
+----------------------------------------------------------------------
+
+install gnome-extenstion in brave browser
+
+----------------------------------------------------------------------
+//TOOLS FOR CUSTOMIZATION
+
+sudo apt install gnome-tweaks
+sudo apt install gnome-shell-extensions
+
+//FOR MAKING DOCK LIKE MAC
+sudo apt install dconf-editor
+
+open dconf-editor
+goto --> /org/gnome/shell/extensions/dash-to-dock
+
+now change the values according to your need
+-->dock-position
+-->extend-height
+-->dash-max-icon-size
+-->dock-fixed
+-->show-apps-at-top
+-->click-action
+
+----------------------------------------------------------------------
+
+Packages: 1898 (dpkg), 9 (snap)
+
+----------------------------------------------------------------------
+//INSTALL GIT
+sudo apt install git
+----------------------------------------------------------------------
+//GCC
+sudo apt install build-essential
+----------------------------------------------------------------------
+//CODEBLOCKS
+sudo apt install codeblocks
+----------------------------------------------------------------------
+
+//INSTALL FLATPACK(DEFAULT IS SNAP)
+
+goto https://flatpak.org/
+
+sudo apt install flatpak
+sudo add-apt-repository ppa:flatpak/stable
+sudo apt update
+sudo apt install flatpak
+
+sudo apt install gnome-software-plugin-flatpak
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+
+restart the computer
+
+note : flatpach apps are big
+
+----------------------------------------------------------------------
+
+// INSTALLING APPS FROM FLATPACK STORE
+https://flathub.org/
+
+-->install obs
+-->install vlc
+-->install postman
+
+----------------------------------------------------------------------
+
+After installing 
+Packages: 1927 (dpkg), 15 (flatpak)
+
+
+
